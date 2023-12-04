@@ -1,0 +1,90 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #161a30;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #31304d;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu {
+  margin-right: 5%;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 50px;
+}
+
+.header {
+  background-color: #ff9130;
+  padding: 0 30px;
+  border-radius: 5px;
+}
+
+.item-box {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 3px solid #ff9130;
+}
+
+.submit-btn {
+  font-size: 1.3rem;
+  background-color: #ff9130;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  color: #fff;
+}
+
+.item-list {
+  color: #000;
+  list-style: none;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.item-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ebeaea;
+}
+
+.item {
+  padding: 20px;
+}
+
+#newtaskitem[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}

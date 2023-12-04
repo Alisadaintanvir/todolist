@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="menu">
+            <a href="/">Today</a>
+            <a href="#">Work</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1><%= heading %></h1>
+        </div>
+
+        <div class="item-box">
+
+            <% items.forEach(item=>{ %>
+            <% if (item){ %>
+            <ul class="item-list">
+                <li>
+                    <input type="checkbox" name="" id="newtaskitem">
+                    <label class="item"><%- item %></label>
+                </li>
+            </ul>
+            <%} %>
+            <% }) %>
+
+
+            <form action="/" method="post">
+                <input type="text" name="newItem" id="" placeholder="New Item" autocomplete="off">
+                <button class="submit-btn" type="submit">+</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
